@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#0056b3"   # Blue for headings/buttons
+backgroundColor = "#f9f9f9"  # Light background
+secondaryBackgroundColor = "#e6f2ff"  # Sidebar light blue
+textColor = "#000000"       # Black text for readability
+font = "sans serif"
