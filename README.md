@@ -10,11 +10,15 @@ Planners and engineers often lack quick, explainable tools to estimate the cost 
 
 - Upload intervention CSVs
 - Itemized cost breakdown with IRC references
+- AI flags for anomalies (High Cost, Missing IRC Code, Unusual Quantity, etc.)
+- Styled tables with blue/green gradients for readability
 - Sensitivity analysis (±10%)
-- Bar and pie chart visualizations
+- Bar and pie chart visualizations (NaN-safe)
 - Scenario comparison (Plan A vs Plan B)
 - Multi-plan comparison across multiple CSVs
 - Downloadable reports
+- Future scope panel for planned enhancements
+
 
 ## 🛠️ Tech Stack
 
@@ -24,18 +28,19 @@ Planners and engineers often lack quick, explainable tools to estimate the cost 
 - Responsive UI with blue/green theme
 
 ## 📂 Folder Structure
-road-safety-estimator/
+estimator/
 │
-├── app.py                  # Your Streamlit app
+├── app.py                  # Final Streamlit app (updated with AI flags, styled tables, NaN-safe charts)
 ├── rates.csv               # Official rates used in the estimator
-├── README.md               # Overview of the project
+├── README.md               # Project overview and instructions
 │
-├── test-data/              # Folder for sample CSVs used for testing
-│   ├── planA.csv
-│   ├── planB.csv
-│   ├── interventions.csv
+├── test-data/              # Folder for sample/test CSVs
+│   ├── planA.csv           # Example scenario A
+│   ├── planB.csv           # Example scenario B
+│   ├── interventions.csv   # Original sample interventions
+│   └── test_interventions.csv   # NEW test file for validation of flags
 │
-└── .streamlit/             # Streamlit config folder 
+└── streamlit/              # Streamlit cache/config folder (auto-generated)
 
 
 ## 🚀 How to Run
@@ -49,13 +54,15 @@ road-safety-estimator/
 ## 📊 Sample Data
 
 Sample intervention files are available in the `test-data/` folder.
-For multiple scenario , use all 3 csv files.
+For multiple scenario , use all csv files.
 
 ## 🔭 Future Scope
 
 - Live price scraping from CPWD/GeM
 - Expansion to all IRC interventions
 - Integration with public health and crash data
+- Predictive AI for cost overruns
+- Clustering interventions by ROI or risk
 
 ## 👤 Author
 
