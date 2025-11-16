@@ -1,0 +1,10 @@
+Intervention,Quantity,IRC Code
+Speed Breaker,5,IRC:99
+Signage,0.5,IRC:67
+Pedestrian Crossing,1200,IRC:103
+Unknown Device,10,
+Rumble Strip,15,IRC:35
+Footpath,8,IRC:21
+Guard Rail,20,IRC:119
+Street Lighting,3,IRC:SP-84
+Zero Cost Item,10,IRC:88
